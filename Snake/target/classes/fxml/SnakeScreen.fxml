@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneOut" maxHeight="300.0" maxWidth="300.0" minHeight="304.0" minWidth="600.0" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="panePlay" layoutX="2.0" layoutY="2.0" maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Canvas fx:id="canvas" height="300.0" width="400.0" />
+         </children></Pane>
+      <Label alignment="CENTER" layoutX="439.0" layoutY="23.0" prefHeight="25.0" prefWidth="108.0" style="-fx-font-size: 16;" text="ESC - END" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Blend />
+         </effect></Label>
+      <Label fx:id="score" layoutX="489.0" layoutY="96.0" style="-fx-font-size: 16;" text="0" textFill="WHITE" />
+      <Label layoutX="469.0" layoutY="56.0" style="-fx-font-size: 16;" text="SCORE:" textFill="WHITE" />
+      <Label layoutX="476.0" layoutY="140.0" text="Level :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="level" layoutX="478.0" layoutY="177.0" text="level" textFill="#fcfcfc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
